@@ -1,4 +1,4 @@
-# Engineering Apprenticeship Portfolio – Jon Peralta
+# Engineering Apprenticeship Portfolio – Jon Batista
 
 This repository contains a curated set of projects demonstrating my
 software engineering fundamentals, problem-solving approach, and
@@ -45,7 +45,7 @@ distributed systems, and collaborating on production-quality software.
 
 ---
 
-## What I'm Learning
+## What I’m Learning
 - Software design patterns
 - Testing and debugging techniques
 - Writing maintainable, production-ready code

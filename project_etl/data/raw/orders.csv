@@ -1,0 +1,11 @@
+order_id,customer_name,product,quantity,price,order_date
+ORD-001,John Doe,Widget A,5,29.99,2024-01-15
+ORD-002,Jane Smith,Widget B,3,49.99,2024-01-16
+ORD-003,Bob Johnson,Widget A,2,29.99,2024-01-16
+ORD-004,Alice Williams,Widget C,10,19.99,2024-01-17
+ORD-005,Charlie Brown,Widget B,1,49.99,2024-01-17
+ORD-006,Diana Prince,Widget A,4,29.99,2024-01-18
+ORD-007,Ethan Hunt,Widget D,7,39.99,2024-01-18
+ORD-008,Fiona Green,Widget C,5,19.99,2024-01-19
+ORD-009,George Martin,Widget A,3,29.99,2024-01-19
+ORD-010,Hannah Lee,Widget B,2,49.99,2024-01-20

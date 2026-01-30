@@ -1,0 +1,17 @@
+# Personal documentation and setup guides
+DELIVERY_SUMMARY.md
+GITHUB_SETUP_GUIDE.md
+
+# Personal notes
+*_NOTES.md
+*_PERSONAL.md
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo

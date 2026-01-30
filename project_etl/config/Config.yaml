@@ -1,0 +1,66 @@
+# ETL Pipeline Configuration
+
+# Database Configuration
+database:
+  type: sqlite
+  path: ./data/processed/pipeline.db
+  # For PostgreSQL:
+  # type: postgresql
+  # host: localhost
+  # port: 5432
+  # database: etl_db
+  # user: etl_user
+  # password: ${DB_PASSWORD}  # Use environment variable
+
+# Data Sources
+sources:
+  csv:
+    path: ./data/raw/orders.csv
+    encoding: utf-8
+    delimiter: ","
+  
+  json:
+    path: ./data/raw/customers.json
+  
+  api:
+    base_url: https://api.example.com
+    endpoint: /data
+    timeout: 30
+    retry_attempts: 3
+
+# Transformation Rules
+transformations:
+  date_columns:
+    - order_date
+    - created_at
+  
+  required_columns:
+    - order_id
+    - customer_name
+    - product
+    - quantity
+    - price
+  
+  data_types:
+    quantity: integer
+    price: float
+    order_date: datetime
+
+# Data Quality Rules
+quality:
+  allow_duplicates: false
+  max_null_percentage: 0.05  # 5%
+  validate_schema: true
+
+# Pipeline Settings
+pipeline:
+  batch_size: 1000
+  log_level: INFO
+  log_file: ./logs/pipeline.log
+  error_handling: rollback  # Options: rollback, skip, continue
+
+# Output Settings
+output:
+  table_name: orders
+  write_mode: append  # Options: append, replace, fail
+  create_indexes: true
