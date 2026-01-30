@@ -1,4 +1,4 @@
-# Engineering Apprenticeship Portfolio – Jon Peralta
+# Engineering Apprenticeship Portfolio – Jon Batista
 
 This repository contains a curated set of projects demonstrating my
 software engineering fundamentals, problem-solving approach, and
